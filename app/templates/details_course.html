@@ -1,0 +1,19 @@
+{%extends 'base.html' %}
+{%block course_details%}
+<div class="main">
+    <a href="{% url 'home_page' %}">   < back to home page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br><br>
+<span>Podaci o kolegiju:</span><br>
+{{ data.name }}<br>
+{{ data.kod }}<br>
+{{ data.program }}<br>
+Bodovi:{{ data.ects }}<br>
+Semestar redovnim studentima: {{ data.sem_red }}.<br>
+Semestar izvanrednim studentima: {{ data.sem_izv }}.<br>
+Izborni:{{ data.izborni }}<br>
+Nositelj kolegija:{{ data.nositelj_kolegija.username }}<br>
+
+<br><br>
+
+{%endblock%}
+

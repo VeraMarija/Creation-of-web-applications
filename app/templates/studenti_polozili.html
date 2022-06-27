@@ -1,0 +1,19 @@
+{%extends 'base.html' %}
+{%block studenti_polozili%}
+<div class="main">
+    <a href="{% url 'home_page' %}">   < back to home page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br><br>
+<div class="main">
+<span>POPIS STUDENATA KOJI SU POLOZILI KOLEGIJ {{kolegij.name}} :</span><br><br>
+    {%for i in studenti%}
+    <b>{{i.username}}</b><br>
+    {%endfor%}
+
+</div>
+
+
+
+
+
+
+{%endblock%}

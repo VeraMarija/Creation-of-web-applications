@@ -1,0 +1,11 @@
+{%extends 'base.html' %}
+{%block mentor_details%}
+<div class="main">
+    <a href="{% url 'home_page' %}">   < back to home page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br><br>
+<span>Podaci o mentoru:</span><br>
+Ime: {{ data.username }}<br>
+E-mail: {{ data.email }}<br>
+<br><br>
+{%endblock%}
+

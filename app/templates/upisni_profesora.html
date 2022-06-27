@@ -1,0 +1,29 @@
+{%extends 'base.html' %}
+{%block upisni_profesora%}
+<div class="main">
+    <a href="{% url 'home_page' %}">   < back to home page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br><br>
+<div class="main">
+<span>Upisi({{email}})</span><br><br>
+{%for i in semesters%}
+<p>Semestar {{ forloop.counter }}:</p>
+{%for item in i%}
+{%for key,value in item.items%}
+{%if value.status == 'enr' %}
+<b>{{ key.name}}</b>&nbsp;&nbsp;&nbsp;&nbsp;
+<i class="fa fa-check"></i> upisan &nbsp;&nbsp;<a href="{% url 'promijeni_status' value.id %}">promijeni status</a>
+<br>
+{% else %}
+<b>{{ key.name}}</b>&nbsp;&nbsp;&nbsp;&nbsp;
+<i class="fas fa-check-double"></i>polozen
+<br>
+{% endif %}
+{%endfor%}
+{%endfor%}<br>
+{%endfor%}
+{%for i in data%}
+{{i.name}}<br>
+{%endfor%}
+</div>
+{%endblock%}
+

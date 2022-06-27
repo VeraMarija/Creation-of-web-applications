@@ -1,0 +1,16 @@
+{%extends 'base.html' %}
+{%block students%}
+<div class="main">
+    <a href="{% url 'home_page' %}">   < back to home page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br><br>
+<div><i class='fa fa-file'></i> <a href="{% url 'new_student' %}">new_student</a><br></div><br><br>
+{% for i in data %}
+<div class="main"><span>{{ i.username }} </span>&nbsp;&nbsp;&nbsp;&nbsp;
+<i class='fas fa-edit'></i><a href="{% url 'edit_student' i.id %}">edit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i class="fa fa-info-circle">&nbsp;</i><a href="{% url 'details_student' i.id %}">details</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i class="fa fa-book">&nbsp;</i><a href="{% url 'upisni_admina' i.id %}">upisni_list</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i class="fa fa-trash"> </i><a href="{% url 'delete_student' i.id %}">delete</a> </div>
+<br><br>
+{%endfor%}
+{%endblock%}
+
