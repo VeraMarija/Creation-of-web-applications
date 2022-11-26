@@ -1,0 +1,8 @@
+{%extends 'base.html'%}
+{%block edit_course%}
+<form method="POST" >
+    {{form}}<br>
+    {%csrf_token%}
+    <input type="submit" value="save course">
+</form>
+{%endblock%}

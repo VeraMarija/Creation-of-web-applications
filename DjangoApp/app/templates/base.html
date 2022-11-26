@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+    body {
+        
+        background-color: #cec9e0;
+    }
+    span{
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+    }
+    input[type="submit"]{
+        background-color: rgb(247, 229, 150); ;
+        color:rgb(9, 46, 78);
+        border-radius: 30px;
+    }
+    .main{
+        background: linear-gradient(to bottom, #cec9e0, #f8e27f);;
+        text-align: center;
+        display:inline-block;
+        border:2px; 
+        border-style:solid;
+        border-color:rgb(248, 206, 154);
+        padding: 1em;
+        background-color:lavender;
+    }
+    div {
+        display:inline-block;
+        text-align: center;
+    }
+    p{
+        font-weight: 800;
+    }
+    b {
+        color:rgb(216, 68, 9);
+    }
+
+</style>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    {% block login %}
+    {% endblock %}
+    {% block admin %}
+    {% endblock %}
+    {% block mentor %}
+    {% endblock %}
+    {% block student %}
+    {% endblock %}
+    {% block logout %}
+    {% endblock %}
+    {% block courses %}
+    {% endblock %}
+    {% block add_course %}
+    {% endblock %}
+    {% block edit_course %}
+    {% endblock %}
+    {% block course_details %}
+    {% endblock %}
+    {% block students_course %}
+    {% endblock %}
+    {% block students %}
+    {% endblock %}
+    {% block mentors %}
+    {% endblock %}
+    {% block delete_course %}
+    {% endblock %}
+    {% block delete_student %}
+    {% endblock %}
+    {% block delete_mentor %}
+    {% endblock %}
+    {% block add_student %}
+    {% endblock %}
+    {% block edit_student %}
+    {% endblock %}
+    {% block upisni_studenta %}
+    {% endblock %}
+    {% block upisni_admina %}
+    {% endblock %}
+    {% block upisni_profesora %}
+    {% endblock %}
+    {% block admin_add_course %}
+    {% endblock %}
+    {% block student_details %}
+    {% endblock %}
+    {% block mentor_details %}
+    {% endblock %}
+    {% block mentor_courses %}
+    {% endblock %}
+    {% block mentor_students %}
+    {% endblock %}
+    {% block studenti_polozili %}
+    {% endblock %}
+    {% block ispisi %}
+    {% endblock %}
+
+
+
+    
+</body>
+</html>

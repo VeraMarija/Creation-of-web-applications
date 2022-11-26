@@ -1,6 +1,0 @@
-{%extends 'base.html' %}
-{%block student%}
-<div class="main">
-<a href="{% url 'logout' %}?next=/login">logout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="{% url 'upisni_studenta' user.id %}">moj_upisni_list</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-{%endblock%}

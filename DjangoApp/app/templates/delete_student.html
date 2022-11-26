@@ -1,0 +1,10 @@
+{%extends 'base.html' %}
+{%block delete_student%}
+<form method="POST">
+    <span>Sigurno želite izbrisati studenta {{data.username}}?</span> <br>
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" name='DA' value="DA">
+    <input type="submit" name='NE' value="NE">
+    </form>
+{%endblock%}

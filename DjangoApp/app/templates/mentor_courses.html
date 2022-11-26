@@ -1,0 +1,15 @@
+{%extends 'base.html' %}
+{%block mentor_courses%}
+<div class="main">
+    <a href="{% url 'home_page' %}">   < back to home page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br><br>
+<div class="main">
+<span> SVI MOJI KOLEGIJI </span><br><br>
+{%for i in data%}
+<b>{{i.name}}&nbsp;&nbsp;&nbsp;</b><a href="{% url 'kolegij_studenti' i.id %}">popis studenata</a>
+&nbsp;&nbsp;&nbsp;<a href="{% url 'studenti_polozili' i.id %}">studenti_koji_su_polozili</a>
+
+<br><br>
+{%endfor%}</div>
+{%endblock%}
+

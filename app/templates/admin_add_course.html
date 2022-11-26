@@ -1,8 +1,0 @@
-{%extends 'base.html'%}
-{%block admin_add_course%}
-<form method="POST" >
-    {{form}}<br>
-    {%csrf_token%}
-    <input type="submit" value="make_upisni">
-</form>
-{%endblock%}

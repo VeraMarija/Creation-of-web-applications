@@ -1,8 +1,0 @@
-{%extends 'base.html'%}
-{%block add_student%}
-<form method="POST" >
-    {{form}}<br>
-    {%csrf_token%}
-    <input type="submit" value="add student">
-</form>
-{%endblock%}
